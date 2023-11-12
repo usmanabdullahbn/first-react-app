@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Home from "./components/home/home";
+import { About, Contact } from "./components/about/about";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navigation from "./components/navigation/navigation";
+import TodoList from "./components/todo list/todo-list";
+import WeatherApp from "./components/weather App/weather";
+import ImageSlider from "./components/image slider/img-slider";
+import Faq from "./components/FAQ/Faq";
+import AskUs from "./components/ask us/aks";
+import Snapshort from "./components/Snapshort/Snapshort";
 
-function App() {
+
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navigation />
+        <Routes>
+          <Route  path="/" element={<Home />} />
+          <Route  path="/about" element={<About />} />
+          <Route  path="contact" element={<Contact />} />
+          <Route  path="todo-list" element={<TodoList />} />
+          <Route  path="weather-app" element={<WeatherApp />} />
+          <Route  path="image-slider" element={<ImageSlider />} />
+          <Route  path="faq" element={<Faq />} />
+          <Route  path="ask-us" element={<AskUs />} />
+          <Route  path="snapshort" element={<Snapshort />} />
+        </Routes>
+      </Router>
+    </>
+    /*<Fragment>
+      <Home />
+      <About/>
+    </Fragment>*
+    /*<React.Fragment>
+      <Home />
+      <About/>
+    </React.Fragment> */
+    /* <div>
+        <Home />
+        <About/>
+    </div> */
   );
 }
 

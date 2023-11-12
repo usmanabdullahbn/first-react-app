@@ -1,0 +1,2 @@
+https://api.openweathermap.org/data/2.5/weather?q=karachi&units=metric&appid=
+https://api.openweathermap.org/data/2.5/weather?q=karachi&units=metric&appid=06c3882403ab0d2583d6dbb45339c5cb

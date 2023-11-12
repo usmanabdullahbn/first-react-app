@@ -1,0 +1,24 @@
+.mainContainer {
+    width: 800px;
+    height: auto;
+    background: #fff;
+    color: #000;
+    margin: 10px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#btn{
+color: white;
+background-color: #2676BB;
+padding: 5px 15px;
+align-items: center;
+justify-content: center;
+border: none;
+}
+.btn-div {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    margin-top: 20px; /* Add spacing at the top */
+}
